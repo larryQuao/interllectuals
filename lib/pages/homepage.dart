@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  child: Image.asset(''),
+                  child: Image.asset('logo.png'),
                 )
               ],
             )
