@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
@@ -103,13 +101,15 @@ class HomePage extends StatelessWidget {
                           color: const Color(0xFF621A9A),
                           borderRadius: BorderRadius.circular(50)),
                       padding: const EdgeInsets.only(
-                          left: 39, right: 39, top: 8, bottom: 8),
+                          left: 39, right: 39, top: 10, bottom: 10),
                       child: Text(
                         '#1 Teaching Assistance Platform',
                         style: GoogleFonts.montserrat(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w700,
-                            height: 1.2),
+                          fontSize: 24,
+                          fontWeight: FontWeight.w500,
+                          height: 1.2,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ],
@@ -120,11 +120,11 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        width: 680,
+                        width: 972,
                         child: Text(
                           'Improve Academically. Yours For The Taking',
                           style: GoogleFonts.montserrat(
-                              fontSize: 62,
+                              fontSize: 82,
                               fontWeight: FontWeight.w700,
                               height: 1.2),
                           // style: TextStyle(
@@ -142,18 +142,15 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 15),
                   child: Row(
                     children: [
-                      Expanded(
-                        child: Container(
-                          width: 235,
-                          child: const Text(
-                            'Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants across the globe',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xFF000000),
-                                height: 1.1),
-                          ),
+                      Container(
+                        width: 785,
+                        child: Text(
+                          'Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants across the globe',
+                          style: GoogleFonts.montserrat(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w500,
+                              color: const Color(0xFF000000),
+                              height: 1.1),
                         ),
                       )
                     ],
@@ -174,27 +171,27 @@ class HomePage extends StatelessWidget {
                                 left: 49, right: 49, top: 20, bottom: 20),
                           ),
                         ),
-                        child: const Text(
+                        child: Text(
                           'Get Started',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontFamily: 'Montserrat',
-                              fontWeight: FontWeight.w400),
+                          style: GoogleFonts.montserrat(
+                            fontSize: 24,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
                 // Trusted by Universities Boards
-                const Padding(
-                  padding: EdgeInsets.only(top: 27),
+                Padding(
+                  padding: const EdgeInsets.only(top: 27),
                   child: Row(
                     children: [
                       Text(
                         'Trusted by Universities Boards',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontFamily: 'Montserrat',
+                        style: GoogleFonts.montserrat(
+                          fontSize: 24,
                           fontWeight: FontWeight.w400,
                         ),
                       )
@@ -204,6 +201,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+          // Counter
           Container(
             margin: EdgeInsets.only(top: 127, bottom: 77),
             padding: const EdgeInsets.only(top: 25, bottom: 25),
@@ -327,17 +325,14 @@ class HomePage extends StatelessWidget {
                   padding: EdgeInsets.only(top: 0),
                   child: Row(
                     children: [
-                      Expanded(
-                        child: Container(
-                          width: 780,
-                          child: const Text(
-                            'Skill Transformation Pack From Intellectuals',
-                            style: TextStyle(
-                                fontSize: 62,
-                                fontFamily: 'Montserrat',
-                                fontWeight: FontWeight.w900,
-                                height: 1.2),
-                          ),
+                      Container(
+                        width: 850,
+                        child: Text(
+                          'Skill Transformation Pack From Intellectuals',
+                          style: GoogleFonts.montserrat(
+                              fontSize: 62,
+                              fontWeight: FontWeight.w700,
+                              height: 1.2),
                         ),
                       ),
                     ],
@@ -350,11 +345,10 @@ class HomePage extends StatelessWidget {
                     children: [
                       Container(
                         width: 765,
-                        child: const Text(
+                        child: Text(
                           'Combine technical training for Students with Industries experts, mentors and Project managers for critical thinking that pushes innovation. This training is to equip academic giants for the job market.',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 18,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 24,
                             fontWeight: FontWeight.w400,
                             color: Color(0xFF000000),
                             height: 1.1,
