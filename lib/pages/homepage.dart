@@ -24,61 +24,56 @@ class HomePage extends StatelessWidget {
                   'images/logo.png',
                   width: 189,
                 ),
-                const Row(
+                Row(
                   children: [
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.only(left: 93),
                     ),
                     Text(
                       'Home',
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
+                      style: GoogleFonts.montserrat(
                         fontSize: 18,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.only(left: 60),
                     ),
                     Text(
                       'About',
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
+                      style: GoogleFonts.montserrat(
                         fontSize: 18,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.only(left: 60),
                     ),
                     Text(
                       'Service',
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
+                      style: GoogleFonts.montserrat(
                         fontSize: 18,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.only(left: 60),
                     ),
                     Text(
                       'Advisor',
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
+                      style: GoogleFonts.montserrat(
                         fontSize: 18,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.only(left: 60),
                     ),
                     Text(
                       'Blog',
-                      style: TextStyle(
-                        fontFamily: 'Montserrat',
+                      style: GoogleFonts.montserrat(
                         fontSize: 18,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                   ],
@@ -86,7 +81,13 @@ class HomePage extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.only(left: 99),
                 ),
-                Text('Log In', style: GoogleFonts.montserrat()),
+                Text(
+                  'Log In',
+                  style: GoogleFonts.montserrat(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
               ],
             ),
           ),
