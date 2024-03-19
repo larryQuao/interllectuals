@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                     Text(
                       'Home',
                       style: GoogleFonts.montserrat(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                     Text(
                       'About',
                       style: GoogleFonts.montserrat(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                     Text(
                       'Service',
                       style: GoogleFonts.montserrat(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                     Text(
                       'Advisor',
                       style: GoogleFonts.montserrat(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                     Text(
                       'Blog',
                       style: GoogleFonts.montserrat(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
                 Text(
                   'Log In',
                   style: GoogleFonts.montserrat(
-                    fontSize: 18,
+                    fontSize: 16,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -105,7 +105,7 @@ class HomePage extends StatelessWidget {
                       child: Text(
                         '#1 Teaching Assistance Platform',
                         style: GoogleFonts.montserrat(
-                          fontSize: 24,
+                          fontSize: 16,
                           fontWeight: FontWeight.w500,
                           height: 1.2,
                           color: Colors.white,
@@ -124,7 +124,7 @@ class HomePage extends StatelessWidget {
                         child: Text(
                           'Improve Academically. Yours For The Taking',
                           style: GoogleFonts.montserrat(
-                              fontSize: 82,
+                              fontSize: 52,
                               fontWeight: FontWeight.w700,
                               height: 1.2),
                           // style: TextStyle(
@@ -147,7 +147,7 @@ class HomePage extends StatelessWidget {
                         child: Text(
                           'Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants across the globe',
                           style: GoogleFonts.montserrat(
-                              fontSize: 24,
+                              fontSize: 16,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFF000000),
                               height: 1.1),
@@ -174,7 +174,7 @@ class HomePage extends StatelessWidget {
                         child: Text(
                           'Get Started',
                           style: GoogleFonts.montserrat(
-                            fontSize: 24,
+                            fontSize: 16,
                             color: Colors.white,
                             fontWeight: FontWeight.w400,
                           ),
@@ -191,8 +191,8 @@ class HomePage extends StatelessWidget {
                       Text(
                         'Trusted by Universities Boards',
                         style: GoogleFonts.montserrat(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w400,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
                         ),
                       )
                     ],
@@ -203,7 +203,7 @@ class HomePage extends StatelessWidget {
           ),
           // Counter
           Container(
-            margin: EdgeInsets.only(top: 127, bottom: 77),
+            margin: const EdgeInsets.only(top: 127, bottom: 77),
             padding: const EdgeInsets.only(top: 25, bottom: 25),
             decoration: const BoxDecoration(color: Colors.black),
             child: Row(
@@ -211,22 +211,23 @@ class HomePage extends StatelessWidget {
               children: [
                 Expanded(
                   child: Container(
-                    child: const Column(
+                    child: Column(
                       children: [
                         Text(
                           '3+',
-                          style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 54,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white),
+                          style: GoogleFonts.montserrat(
+                            fontSize: 52,
+                            fontWeight: FontWeight.w500,
+                            height: 1.2,
+                            color: Colors.white,
+                          ),
                         ),
                         Text(
                           'Years of experience',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 18,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16,
                             fontWeight: FontWeight.w500,
+                            height: 1.2,
                             color: Colors.white,
                           ),
                           textAlign: TextAlign.center,
@@ -237,22 +238,23 @@ class HomePage extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    child: const Column(
+                    child: Column(
                       children: [
                         Text(
                           '99%',
-                          style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 54,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white),
+                          style: GoogleFonts.montserrat(
+                            fontSize: 52,
+                            fontWeight: FontWeight.w500,
+                            height: 1.2,
+                            color: Colors.white,
+                          ),
                         ),
                         Text(
                           'Accuracy Rate',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 18,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16,
                             fontWeight: FontWeight.w500,
+                            height: 1.2,
                             color: Colors.white,
                           ),
                           textAlign: TextAlign.center,
@@ -263,22 +265,23 @@ class HomePage extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    child: const Column(
+                    child: Column(
                       children: [
                         Text(
                           '300+',
-                          style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 54,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white),
+                          style: GoogleFonts.montserrat(
+                            fontSize: 52,
+                            fontWeight: FontWeight.w500,
+                            height: 1.2,
+                            color: Colors.white,
+                          ),
                         ),
                         Text(
                           'Positive Reviews',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 18,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16,
                             fontWeight: FontWeight.w500,
+                            height: 1.2,
                             color: Colors.white,
                           ),
                           textAlign: TextAlign.center,
@@ -289,22 +292,23 @@ class HomePage extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    child: const Column(
+                    child: Column(
                       children: [
                         Text(
                           '50+',
-                          style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              fontSize: 54,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white),
+                          style: GoogleFonts.montserrat(
+                            fontSize: 52,
+                            fontWeight: FontWeight.w500,
+                            height: 1.2,
+                            color: Colors.white,
+                          ),
                         ),
                         Text(
                           'Satisfied Customers',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 18,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16,
                             fontWeight: FontWeight.w500,
+                            height: 1.2,
                             color: Colors.white,
                           ),
                           textAlign: TextAlign.center,
@@ -316,8 +320,9 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+          // About Section
           Padding(
-            padding: const EdgeInsets.only(top: 50, left: 102),
+            padding: const EdgeInsets.only(top: 50, left: 102, bottom: 102),
             child: Column(
               children: [
                 // Big Text Description
@@ -330,7 +335,7 @@ class HomePage extends StatelessWidget {
                         child: Text(
                           'Skill Transformation Pack From Intellectuals',
                           style: GoogleFonts.montserrat(
-                              fontSize: 62,
+                              fontSize: 52,
                               fontWeight: FontWeight.w700,
                               height: 1.2),
                         ),
@@ -348,9 +353,9 @@ class HomePage extends StatelessWidget {
                         child: Text(
                           'Combine technical training for Students with Industries experts, mentors and Project managers for critical thinking that pushes innovation. This training is to equip academic giants for the job market.',
                           style: GoogleFonts.montserrat(
-                            fontSize: 24,
-                            fontWeight: FontWeight.w400,
-                            color: Color(0xFF000000),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: const Color(0xFF000000),
                             height: 1.1,
                           ),
                           overflow: TextOverflow.visible,
@@ -359,9 +364,139 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+                // Some boxes
+                Padding(
+                  padding: EdgeInsets.only(top: 50),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            width: 400,
+                            height: 250,
+                            decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(30)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(33.0),
+                              child: Text(
+                                'Workshop',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold,
+                                  height: 1.2,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 26,
+                          ),
+                          Container(
+                            width: 400,
+                            height: 250,
+                            decoration: BoxDecoration(
+                                border:
+                                    Border.all(color: Colors.black, width: 2),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(30)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(33.0),
+                              child: Text(
+                                'Target zone',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold,
+                                  height: 1.2,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(height: 26),
+                      Row(
+                        children: [
+                          Container(
+                            width: 400,
+                            height: 250,
+                            decoration: BoxDecoration(
+                                border:
+                                    Border.all(color: Colors.black, width: 2),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(30)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(33.0),
+                              child: Text(
+                                'Impact',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold,
+                                  height: 1.2,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 26,
+                          ),
+                          Container(
+                            width: 400,
+                            height: 250,
+                            decoration: BoxDecoration(
+                                border:
+                                    Border.all(color: Colors.black, width: 2),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(30)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(33.0),
+                              child: Text(
+                                'Digital Platform',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold,
+                                  height: 1.2,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
+          // Services Section
+          Container(
+              padding: const EdgeInsets.only(left: 102),
+              decoration: BoxDecoration(color: Colors.black),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Why Should I Choose',
+                        style: GoogleFonts.montserrat(
+                            fontSize: 52,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                      Image.asset(
+                        'images/text_image.png',
+                        width: 474,
+                      ),
+                    ],
+                  )
+                ],
+              ))
         ],
       ),
     ));
