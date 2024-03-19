@@ -104,13 +104,12 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(50)),
                       padding: const EdgeInsets.only(
                           left: 39, right: 39, top: 8, bottom: 8),
-                      child: const Text(
+                      child: Text(
                         '#1 Teaching Assistance Platform',
-                        style: TextStyle(
-                            fontFamily: 'Monstserrat',
+                        style: GoogleFonts.montserrat(
                             fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.white),
+                            fontWeight: FontWeight.w700,
+                            height: 1.2),
                       ),
                     ),
                   ],
