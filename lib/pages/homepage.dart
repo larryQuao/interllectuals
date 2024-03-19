@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -85,14 +86,7 @@ class HomePage extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.only(left: 99),
                 ),
-                const Text(
-                  'Log In',
-                  style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontSize: 18,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
+                Text('Log In', style: GoogleFonts.montserrat()),
               ],
             ),
           ),
@@ -126,14 +120,18 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        width: 580,
-                        child: const Text(
+                        width: 680,
+                        child: Text(
                           'Improve Academically. Yours For The Taking',
-                          style: TextStyle(
+                          style: GoogleFonts.montserrat(
                               fontSize: 62,
-                              fontFamily: 'Montserrat',
-                              fontWeight: FontWeight.w900,
+                              fontWeight: FontWeight.w700,
                               height: 1.2),
+                          // style: TextStyle(
+                          //     fontSize: 62,
+                          //     fontFamily: 'Montserrat',
+                          //     fontWeight: FontWeight.w900,
+                          //     height: 1.2),
                         ),
                       ),
                     ],
