@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -91,240 +92,252 @@ class HomePage extends StatelessWidget {
             ),
           ),
           // Home content
-          Padding(
-            padding: const EdgeInsets.only(top: 50, left: 102),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.only(top: 50, left: 102, right: 102),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                            color: const Color(0xFF621A9A),
+                            borderRadius: BorderRadius.circular(50)),
+                        padding: const EdgeInsets.only(
+                            left: 39, right: 39, top: 10, bottom: 10),
+                        child: Text(
+                          '#1 Teaching Assistance Platform',
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            height: 1.2,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  // Big Text Description
+                  Padding(
+                    padding: EdgeInsets.only(top: 35),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 972,
+                          child: Text(
+                            'Improve Academically. Yours For The Taking',
+                            style: GoogleFonts.montserrat(
+                                fontSize: 52,
+                                fontWeight: FontWeight.w700,
+                                height: 1.2),
+                            // style: TextStyle(
+                            //     fontSize: 62,
+                            //     fontFamily: 'Montserrat',
+                            //     fontWeight: FontWeight.w900,
+                            //     height: 1.2),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  // Small Text Description
+                  Padding(
+                    padding: const EdgeInsets.only(top: 15),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 785,
+                          child: Text(
+                            'Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants across the globe',
+                            style: GoogleFonts.montserrat(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                color: const Color(0xFF000000),
+                                height: 1.1),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  // Get Started Button
+                  Padding(
+                    padding: const EdgeInsets.only(top: 25),
+                    child: Row(
+                      children: [
+                        OutlinedButton(
+                          onPressed: () {},
+                          style: const ButtonStyle(
+                            backgroundColor:
+                                MaterialStatePropertyAll(Colors.black),
+                            padding: MaterialStatePropertyAll(
+                              EdgeInsets.only(
+                                  left: 49, right: 49, top: 20, bottom: 20),
+                            ),
+                          ),
+                          child: Text(
+                            'Get Started',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 16,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  // Trusted by Universities Boards
+                  Padding(
+                    padding: const EdgeInsets.only(top: 27),
+                    child: Row(
+                      children: [
+                        Text(
+                          'Trusted by Universities Boards',
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          // Counter
+          Container(
+            // margin: const EdgeInsets.only(top: 127, bottom: 77),
+            padding: const EdgeInsets.only(
+                top: 25, bottom: 25, left: 102, right: 102),
+            decoration: const BoxDecoration(color: Colors.black),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                          color: const Color(0xFF621A9A),
-                          borderRadius: BorderRadius.circular(50)),
-                      padding: const EdgeInsets.only(
-                          left: 39, right: 39, top: 10, bottom: 10),
-                      child: Text(
-                        '#1 Teaching Assistance Platform',
-                        style: GoogleFonts.montserrat(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          height: 1.2,
-                          color: Colors.white,
+                    Expanded(
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Text(
+                              '3+',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 52,
+                                fontWeight: FontWeight.w500,
+                                height: 1.2,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              'Years of experience',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                height: 1.2,
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Text(
+                              '99%',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 52,
+                                fontWeight: FontWeight.w500,
+                                height: 1.2,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              'Accuracy Rate',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                height: 1.2,
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Text(
+                              '300+',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 52,
+                                fontWeight: FontWeight.w500,
+                                height: 1.2,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              'Positive Reviews',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                height: 1.2,
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Text(
+                              '50+',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 52,
+                                fontWeight: FontWeight.w500,
+                                height: 1.2,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              'Satisfied Customers',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                height: 1.2,
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
+                            )
+                          ],
                         ),
                       ),
                     ),
                   ],
                 ),
-                // Big Text Description
-                Padding(
-                  padding: EdgeInsets.only(top: 35),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 972,
-                        child: Text(
-                          'Improve Academically. Yours For The Taking',
-                          style: GoogleFonts.montserrat(
-                              fontSize: 52,
-                              fontWeight: FontWeight.w700,
-                              height: 1.2),
-                          // style: TextStyle(
-                          //     fontSize: 62,
-                          //     fontFamily: 'Montserrat',
-                          //     fontWeight: FontWeight.w900,
-                          //     height: 1.2),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                // Small Text Description
-                Padding(
-                  padding: const EdgeInsets.only(top: 15),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 785,
-                        child: Text(
-                          'Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants across the globe',
-                          style: GoogleFonts.montserrat(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                              color: const Color(0xFF000000),
-                              height: 1.1),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                // Get Started Button
-                Padding(
-                  padding: const EdgeInsets.only(top: 25),
-                  child: Row(
-                    children: [
-                      OutlinedButton(
-                        onPressed: () {},
-                        style: const ButtonStyle(
-                          backgroundColor:
-                              MaterialStatePropertyAll(Colors.black),
-                          padding: MaterialStatePropertyAll(
-                            EdgeInsets.only(
-                                left: 49, right: 49, top: 20, bottom: 20),
-                          ),
-                        ),
-                        child: Text(
-                          'Get Started',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 16,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                // Trusted by Universities Boards
-                Padding(
-                  padding: const EdgeInsets.only(top: 27),
-                  child: Row(
-                    children: [
-                      Text(
-                        'Trusted by Universities Boards',
-                        style: GoogleFonts.montserrat(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          // Counter
-          Container(
-            margin: const EdgeInsets.only(top: 127, bottom: 77),
-            padding: const EdgeInsets.only(top: 25, bottom: 25),
-            decoration: const BoxDecoration(color: Colors.black),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Expanded(
-                  child: Container(
-                    child: Column(
-                      children: [
-                        Text(
-                          '3+',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 52,
-                            fontWeight: FontWeight.w500,
-                            height: 1.2,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          'Years of experience',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            height: 1.2,
-                            color: Colors.white,
-                          ),
-                          textAlign: TextAlign.center,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Container(
-                    child: Column(
-                      children: [
-                        Text(
-                          '99%',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 52,
-                            fontWeight: FontWeight.w500,
-                            height: 1.2,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          'Accuracy Rate',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            height: 1.2,
-                            color: Colors.white,
-                          ),
-                          textAlign: TextAlign.center,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Container(
-                    child: Column(
-                      children: [
-                        Text(
-                          '300+',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 52,
-                            fontWeight: FontWeight.w500,
-                            height: 1.2,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          'Positive Reviews',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            height: 1.2,
-                            color: Colors.white,
-                          ),
-                          textAlign: TextAlign.center,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Container(
-                    child: Column(
-                      children: [
-                        Text(
-                          '50+',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 52,
-                            fontWeight: FontWeight.w500,
-                            height: 1.2,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          'Satisfied Customers',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            height: 1.2,
-                            color: Colors.white,
-                          ),
-                          textAlign: TextAlign.center,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
           // About Section
-          Padding(
+          Container(
+            decoration:
+                BoxDecoration(color: Color.fromARGB(106, 153, 255, 156)),
             padding: const EdgeInsets.only(top: 50, left: 102, bottom: 102),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // Big Text Description
                 Padding(
