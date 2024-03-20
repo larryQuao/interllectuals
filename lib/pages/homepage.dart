@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
@@ -474,129 +475,393 @@ class HomePage extends StatelessWidget {
           ),
           // Services Section
           Container(
-              padding: const EdgeInsets.only(left: 102),
-              decoration: BoxDecoration(color: Colors.black),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  // Why I should Choose Intellectuals
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 50, right: 20),
-                        child: Text(
-                          'Why Should I Choose',
-                          style: GoogleFonts.montserrat(
-                              fontSize: 52,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
-                        ),
-                      ),
-                      Image.asset(
-                        'images/text_image.png',
-                        width: 474,
-                      ),
-                    ],
-                  ),
-                  const Padding(padding: EdgeInsets.only(top: 10)),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Get the proper academic strategies from Intellectuals,',
+            padding: const EdgeInsets.only(left: 102, right: 102, bottom: 50),
+            decoration: BoxDecoration(color: Colors.black),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // Why I should Choose Intellectuals: Start
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 50, right: 20),
+                      child: Text(
+                        'Why Should I Choose',
                         style: GoogleFonts.montserrat(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                            fontSize: 52,
+                            fontWeight: FontWeight.bold,
                             color: Colors.white),
-                        textAlign: TextAlign.center,
-                      )
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'We are here to support and train',
-                        style: GoogleFonts.montserrat(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.white),
-                        textAlign: TextAlign.center,
-                      )
-                    ],
-                  ),
-                  const Padding(padding: EdgeInsets.only(top: 61)),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 390,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white, width: 2),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Padding(
-                          padding: const EdgeInsets.all(33.0),
-                          child: Column(
-                            children: [
-                              Row(
+                      ),
+                    ),
+                    Image.asset(
+                      'images/text_image.png',
+                      width: 474,
+                    ),
+                  ],
+                ),
+                // Why I should Choose Intellectuals: End
+
+                const Padding(padding: EdgeInsets.only(top: 10)),
+
+                // Texts under the Why I should Choose Intellectuals
+                // Text 1: Start
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Get the proper academic strategies from Intellectuals,',
+                      style: GoogleFonts.montserrat(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white),
+                      textAlign: TextAlign.center,
+                    )
+                  ],
+                ),
+                // Text 1: End
+
+                // Text 2: Start
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'We are here to support and train',
+                      style: GoogleFonts.montserrat(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white),
+                      textAlign: TextAlign.center,
+                    )
+                  ],
+                ),
+                // Text 2: End
+
+                const Padding(padding: EdgeInsets.only(top: 61)),
+
+                // Boxes Containers with details, Row 1 (Three Boxes): Start
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 390,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white, width: 2),
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            top: 14, bottom: 14, left: 33, right: 33),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'Case Studies & Essays',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    height: 1.2,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 20)),
+                            Container(
+                              child: Text(
+                                'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: const Color(0xFF808080),
+                                ),
+                              ),
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 5)),
+                            // Discover me Button
+                            GestureDetector(
+                              onTap: () {},
+                              child: Row(
                                 children: [
                                   Text(
-                                    'Case Studies & Essays',
+                                    'Discover more',
                                     style: GoogleFonts.montserrat(
-                                      fontSize: 22,
-                                      fontWeight: FontWeight.bold,
-                                      height: 1.2,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
                                       color: Colors.white,
                                     ),
                                   ),
+                                  const Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                  )
                                 ],
                               ),
-                              const Padding(padding: EdgeInsets.only(top: 20)),
-                              Container(
-                                child: Text(
-                                  'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 50),
+                    Container(
+                      width: 390,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white, width: 2),
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            top: 14, bottom: 14, left: 33, right: 33),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'Case Studies & Essays',
                                   style: GoogleFonts.montserrat(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    color: const Color(0xFF808080),
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    height: 1.2,
+                                    color: Colors.white,
                                   ),
+                                ),
+                              ],
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 20)),
+                            Container(
+                              child: Text(
+                                'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: const Color(0xFF808080),
                                 ),
                               ),
-                              TextButton(
-                                style: ButtonStyle(
-                                  shape: MaterialStatePropertyAll(
-                                    RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(0),
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 5)),
+                            // Discover me Button
+                            GestureDetector(
+                              onTap: () {},
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Discover more',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.white,
                                     ),
                                   ),
-                                ),
-                                onPressed: () {},
-                                child: Row(
-                                  children: [
-                                    Text(
-                                      'Discover more',
-                                      style: GoogleFonts.montserrat(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    const Icon(
-                                      Icons.arrow_forward,
-                                      color: Colors.white,
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
+                                  const Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
                         ),
-                      )
-                    ],
-                  )
-                ],
-              ))
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 50,
+                    ),
+                    Container(
+                      width: 390,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white, width: 2),
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            top: 14, bottom: 14, left: 33, right: 33),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'Case Studies & Essays',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    height: 1.2,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 20)),
+                            Container(
+                              child: Text(
+                                'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: const Color(0xFF808080),
+                                ),
+                              ),
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 5)),
+                            // Discover me Button
+                            GestureDetector(
+                              onTap: () {},
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Discover more',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  const Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                // Boxes Containers with details, Row 1 (Three Boxes): End
+
+                const SizedBox(height: 57),
+
+                // Boxes Containers with details. Row 2 (Two Boxes): Start
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 390,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white, width: 2),
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            top: 14, bottom: 14, left: 33, right: 33),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'Case Studies & Essays',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    height: 1.2,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 20)),
+                            Container(
+                              child: Text(
+                                'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: const Color(0xFF808080),
+                                ),
+                              ),
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 5)),
+                            // Discover me Button
+                            GestureDetector(
+                              onTap: () {},
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Discover more',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  const Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 50),
+                    Container(
+                      width: 390,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white, width: 2),
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            top: 14, bottom: 14, left: 33, right: 33),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'Case Studies & Essays',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    height: 1.2,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 20)),
+                            Container(
+                              child: Text(
+                                'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: const Color(0xFF808080),
+                                ),
+                              ),
+                            ),
+                            const Padding(padding: EdgeInsets.only(top: 5)),
+                            // Discover me Button
+                            GestureDetector(
+                              onTap: () {},
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Discover more',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  const Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 50,
+                    ),
+                  ],
+                ),
+                // Boxes Containers with details. Row 2 (Two Boxes): End
+              ],
+            ),
+          )
         ],
       ),
     ));
