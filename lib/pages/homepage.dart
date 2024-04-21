@@ -481,132 +481,842 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+
             // Services Section
             Container(
-                padding: const EdgeInsets.only(left: 102),
-                decoration: BoxDecoration(color: Colors.black),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    // Why I should Choose Intellectuals
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 50, right: 20),
-                          child: Text(
-                            'Why Should I Choose',
-                            style: GoogleFonts.montserrat(
-                                fontSize: 52,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white),
-                          ),
+              padding: const EdgeInsets.only(left: 102, top: 156, bottom: 106),
+              // margin: const EdgeInsets.only(top: 156),
+              decoration: BoxDecoration(color: Colors.black),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Why I should Choose Intellectuals
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20),
+                        child: Text(
+                          'Why Should I Choose',
+                          style: GoogleFonts.montserrat(
+                              fontSize: 52,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
-                        Image.asset(
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 50),
+                        child: Image.asset(
                           'images/text_image.png',
                           width: 474,
                         ),
-                      ],
-                    ),
-                    const Padding(padding: EdgeInsets.only(top: 10)),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Get the proper academic strategies from Intellectuals,',
-                          style: GoogleFonts.montserrat(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w400,
-                              color: Colors.white),
-                          textAlign: TextAlign.center,
-                        )
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'We are here to support and train',
-                          style: GoogleFonts.montserrat(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w400,
-                              color: Colors.white),
-                          textAlign: TextAlign.center,
-                        )
-                      ],
-                    ),
-                    const Padding(padding: EdgeInsets.only(top: 61)),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 390,
-                          decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white, width: 2),
-                              borderRadius: BorderRadius.circular(30)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(33.0),
-                            child: Column(
-                              children: [
-                                Row(
+                      ),
+                    ],
+                  ),
+                  const Padding(padding: EdgeInsets.only(top: 10)),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Get the proper academic strategies from Intellectuals,',
+                        style: GoogleFonts.montserrat(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.white),
+                        textAlign: TextAlign.center,
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'We are here to support and train',
+                        style: GoogleFonts.montserrat(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.white),
+                        textAlign: TextAlign.center,
+                      )
+                    ],
+                  ),
+                  const Padding(padding: EdgeInsets.only(top: 61)),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      // Case studies & Essays
+                      Container(
+                        width: 390,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white, width: 2),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(33.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  // Image.asset(
+                                  //   'images/discussion.png',
+                                  //   width: 40,
+                                  // ),
+                                  Text(
+                                    'Case Studies & Essays',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold,
+                                      height: 1.2,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Padding(padding: EdgeInsets.only(top: 20)),
+                              Container(
+                                child: Text(
+                                  'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                    color: const Color(0xFF808080),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                style: ButtonStyle(
+                                  shape: MaterialStatePropertyAll(
+                                    RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(0),
+                                    ),
+                                  ),
+                                ),
+                                onPressed: () {},
+                                child: Row(
                                   children: [
                                     Text(
-                                      'Case Studies & Essays',
+                                      'Discover more',
                                       style: GoogleFonts.montserrat(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.bold,
-                                        height: 1.2,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
                                         color: Colors.white,
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.arrow_forward,
+                                      color: Colors.white,
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 49,
+                      ),
+                      // Discussion Sessions
+                      Container(
+                        width: 390,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white, width: 2),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(33.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    'Discussion Sessions',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold,
+                                      height: 1.2,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Padding(padding: EdgeInsets.only(top: 20)),
+                              Container(
+                                child: Text(
+                                  'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                    color: const Color(0xFF808080),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                style: ButtonStyle(
+                                  shape: MaterialStatePropertyAll(
+                                    RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(0),
+                                    ),
+                                  ),
+                                ),
+                                onPressed: () {},
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'Discover more',
+                                      style: GoogleFonts.montserrat(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.arrow_forward,
+                                      color: Colors.white,
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 49,
+                      ),
+                      // Learn Anywhere
+                      Container(
+                        width: 390,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white, width: 2),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(33.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    'Learn Anywhere',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold,
+                                      height: 1.2,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Padding(padding: EdgeInsets.only(top: 20)),
+                              Container(
+                                child: Text(
+                                  'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                    color: const Color(0xFF808080),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                style: ButtonStyle(
+                                  shape: MaterialStatePropertyAll(
+                                    RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(0),
+                                    ),
+                                  ),
+                                ),
+                                onPressed: () {},
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'Discover more',
+                                      style: GoogleFonts.montserrat(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.arrow_forward,
+                                      color: Colors.white,
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 57,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      // Schedule with Mentor
+                      Container(
+                        width: 390,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white, width: 2),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(33.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  // Image.asset(
+                                  //   'images/discussion.png',
+                                  //   width: 40,
+                                  // ),
+                                  Text(
+                                    'Schedule with Mentor',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold,
+                                      height: 1.2,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Padding(padding: EdgeInsets.only(top: 20)),
+                              Container(
+                                child: Text(
+                                  'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                    color: const Color(0xFF808080),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                style: ButtonStyle(
+                                  shape: MaterialStatePropertyAll(
+                                    RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(0),
+                                    ),
+                                  ),
+                                ),
+                                onPressed: () {},
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'Discover more',
+                                      style: GoogleFonts.montserrat(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.arrow_forward,
+                                      color: Colors.white,
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 84,
+                      ),
+                      // Upload your Portfolio
+                      Container(
+                        width: 390,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white, width: 2),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(33.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    'Upload your Portfolio',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold,
+                                      height: 1.2,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Padding(padding: EdgeInsets.only(top: 20)),
+                              Container(
+                                child: Text(
+                                  'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                    color: const Color(0xFF808080),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                style: ButtonStyle(
+                                  shape: MaterialStatePropertyAll(
+                                    RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(0),
+                                    ),
+                                  ),
+                                ),
+                                onPressed: () {},
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'Discover more',
+                                      style: GoogleFonts.montserrat(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.arrow_forward,
+                                      color: Colors.white,
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+
+            // Advisors Section
+            Container(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 115, vertical: 100),
+              color: const Color(0xffF0F0F0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Big Text Description
+                  Container(
+                    child: Text(
+                      'Top Ranking Teaching Assistants',
+                      style: GoogleFonts.montserrat(
+                          fontSize: 52,
+                          fontWeight: FontWeight.w700,
+                          height: 1.2),
+                    ),
+                  ),
+                  // Small Text Description
+                  Container(
+                    padding: const EdgeInsets.only(top: 37, bottom: 63),
+                    width: 936,
+                    alignment: Alignment.center,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'Meet our Top Teaching Assistant and Industry experts with High Value of',
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: const Color(0xFF000000),
+                            height: 1.1,
+                          ),
+                        ),
+                        Text(
+                          'talents, ready to serve You.',
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: const Color(0xFF000000),
+                            height: 1.1,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  // Assistants Profiles
+                  Container(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        // Single box Profile Avatar 1
+                        Container(
+                          height: 519,
+                          width: 294,
+                          child: Column(
+                            children: [
+                              Container(
+                                alignment: Alignment.center,
+                                height: 434,
+                                width: 294,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.black,
+                                    width: 3,
+                                  ),
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                                child: const Text('Put An Image Avatar here'),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.only(top: 16),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // Profile name
+                                    Container(
+                                      child: Text(
+                                        'John Doe',
+                                        style: GoogleFonts.montserrat(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w600,
+                                          color: const Color(0xFF000000),
+                                          height: 1.1,
+                                        ),
+                                      ),
+                                    ),
+
+                                    // Social Icons
+                                    Container(
+                                      padding: EdgeInsets.only(right: 14.5),
+                                      child: const Row(
+                                        children: [
+                                          Icon(Icons.nature_sharp),
+                                          Icon(Icons.facebook),
+                                          Icon(Icons.hd)
+                                        ],
                                       ),
                                     ),
                                   ],
                                 ),
-                                const Padding(
-                                    padding: EdgeInsets.only(top: 20)),
-                                Container(
-                                  child: Text(
-                                    'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                              ),
+
+                              const SizedBox(height: 11),
+
+                              // Specialty
+                              Row(
+                                children: [
+                                  Text(
+                                    'C++ Programming',
                                     style: GoogleFonts.montserrat(
-                                      fontSize: 16,
+                                      fontSize: 20,
                                       fontWeight: FontWeight.w600,
-                                      color: const Color(0xFF808080),
+                                      color: const Color(0xFF000000),
+                                      height: 1.1,
                                     ),
                                   ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        const SizedBox(
+                          width: 14,
+                        ),
+
+                        // Single box Profile Avatar 1
+                        Container(
+                          height: 519,
+                          width: 294,
+                          child: Column(
+                            children: [
+                              Container(
+                                alignment: Alignment.center,
+                                height: 434,
+                                width: 294,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.black,
+                                    width: 3,
+                                  ),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
-                                TextButton(
-                                  style: ButtonStyle(
-                                    shape: MaterialStatePropertyAll(
-                                      RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(0),
-                                      ),
-                                    ),
-                                  ),
-                                  onPressed: () {},
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'Discover more',
+                                child: const Text('Put An Image Avatar here'),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.only(top: 16),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // Profile name
+                                    Container(
+                                      child: Text(
+                                        'John Doe',
                                         style: GoogleFonts.montserrat(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500,
-                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w600,
+                                          color: const Color(0xFF000000),
+                                          height: 1.1,
                                         ),
                                       ),
-                                      const Icon(
-                                        Icons.arrow_forward,
-                                        color: Colors.white,
-                                      )
-                                    ],
+                                    ),
+
+                                    // Social Icons
+                                    Container(
+                                      padding: EdgeInsets.only(right: 14.5),
+                                      child: const Row(
+                                        children: [
+                                          Icon(Icons.nature_sharp),
+                                          Icon(Icons.facebook),
+                                          Icon(Icons.hd)
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              const SizedBox(height: 11),
+
+                              // Specialty
+                              Row(
+                                children: [
+                                  Text(
+                                    'Accounting Essentials',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w600,
+                                      color: const Color(0xFF000000),
+                                      height: 1.1,
+                                    ),
                                   ),
-                                )
-                              ],
-                            ),
+                                ],
+                              ),
+                            ],
                           ),
-                        )
+                        ),
+
+                        const SizedBox(
+                          width: 14,
+                        ),
+
+                        // Single box Profile Avatar 3
+                        Container(
+                          height: 519,
+                          width: 294,
+                          child: Column(
+                            children: [
+                              Container(
+                                alignment: Alignment.center,
+                                height: 434,
+                                width: 294,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.black,
+                                    width: 3,
+                                  ),
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                                child: const Text('Put An Image Avatar here'),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.only(top: 16),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // Profile name
+                                    Container(
+                                      child: Text(
+                                        'John Doe',
+                                        style: GoogleFonts.montserrat(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w600,
+                                          color: const Color(0xFF000000),
+                                          height: 1.1,
+                                        ),
+                                      ),
+                                    ),
+
+                                    // Social Icons
+                                    Container(
+                                      padding: EdgeInsets.only(right: 14.5),
+                                      child: const Row(
+                                        children: [
+                                          Icon(Icons.nature_sharp),
+                                          Icon(Icons.facebook),
+                                          Icon(Icons.hd)
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              const SizedBox(height: 11),
+
+                              // Specialty
+                              Row(
+                                children: [
+                                  Text(
+                                    'Artificial Intelligence',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w600,
+                                      color: const Color(0xFF000000),
+                                      height: 1.1,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        const SizedBox(
+                          width: 14,
+                        ),
+
+                        // Single box Profile Avatar 4
+                        Container(
+                          height: 519,
+                          width: 294,
+                          child: Column(
+                            children: [
+                              Container(
+                                alignment: Alignment.center,
+                                height: 434,
+                                width: 294,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.black,
+                                    width: 3,
+                                  ),
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                                child: const Text('Put An Image Avatar here'),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.only(top: 16),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // Profile name
+                                    Container(
+                                      child: Text(
+                                        'John Doe',
+                                        style: GoogleFonts.montserrat(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w600,
+                                          color: const Color(0xFF000000),
+                                          height: 1.1,
+                                        ),
+                                      ),
+                                    ),
+
+                                    // Social Icons
+                                    Container(
+                                      padding: EdgeInsets.only(right: 14.5),
+                                      child: const Row(
+                                        children: [
+                                          Icon(Icons.nature_sharp),
+                                          Icon(Icons.facebook),
+                                          Icon(Icons.hd)
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              const SizedBox(height: 11),
+
+                              // Specialty
+                              Row(
+                                children: [
+                                  Text(
+                                    'Calculus',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w600,
+                                      color: const Color(0xFF000000),
+                                      height: 1.1,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
-                    )
-                  ],
-                ))
+                    ),
+                  ),
+
+                  const SizedBox(height: 49),
+
+                  // Previous and Next Buttons
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      // Previous Button
+                      OutlinedButton(
+                        onPressed: () {},
+                        child: Row(
+                          children: [
+                            const Icon(Icons.arrow_back),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 3.0,
+                                  top: 10.0,
+                                  right: 10.0,
+                                  bottom: 10.0),
+                              child: Text(
+                                'Previous',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                  color: const Color(0xFF000000),
+                                  height: 1.1,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+
+                      // Next Button
+                      OutlinedButton(
+                        onPressed: () {},
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 10.0,
+                                  top: 10.0,
+                                  right: 3.0,
+                                  bottom: 10.0),
+                              child: Text(
+                                'Next',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                  color: const Color(0xFF000000),
+                                  height: 1.1,
+                                ),
+                              ),
+                            ),
+                            const Icon(Icons.arrow_forward),
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
