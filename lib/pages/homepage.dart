@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
@@ -1480,7 +1481,38 @@ class HomePage extends StatelessWidget {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                )
+                ),
+
+                const SizedBox(height: 61),
+
+                // Email FormField with button
+                Container(
+                  width: 440,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white,
+                      suffixIcon: IconButton.filled(
+                          style: ButtonStyle(
+                            backgroundColor:
+                                MaterialStatePropertyAll(Colors.black),
+                            padding: MaterialStatePropertyAll(
+                              EdgeInsets.only(right: 30, left: 30),
+                            ),
+                          ),
+                          color: Colors.white,
+                          onPressed: () {},
+                          icon: const Icon(Icons.arrow_forward)),
+                      hintText: 'Enter your Email here',
+                      contentPadding: const EdgeInsets.only(left: 20),
+                      border: const OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(25),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           )
