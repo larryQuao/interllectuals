@@ -1435,19 +1435,24 @@ class HomePage extends StatelessWidget {
 
           // Membership Section
           Container(
-            width: MediaQuery.of(context).size.width,
+            // width: MediaQuery.of(context).size.width,
+            width: double.infinity,
             decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFF8540E0),
-                  Color(0xFFA566F6),
-                  Color(0xFF49217E),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                // stops: [0.02, 0.58, 1.0],
-              ),
-            ),
+                color: Colors.amber,
+                image: DecorationImage(
+                    image: AssetImage('images/membership.png'),
+                    fit: BoxFit.cover)
+                // gradient: LinearGradient(
+                //   colors: [
+                //     Color(0xFF8540E0),
+                //     Color(0xFFA566F6),
+                //     Color(0xFF49217E),
+                //   ],
+                //   begin: Alignment.topCenter,
+                //   end: Alignment.bottomCenter,
+                //   // stops: [0.02, 0.58, 1.0],
+                // ),
+                ),
             child: Column(
               children: [
                 const SizedBox(height: 56),
@@ -1488,30 +1493,156 @@ class HomePage extends StatelessWidget {
                 // Email FormField with button
                 Container(
                   width: 440,
-                  child: TextField(
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      suffixIcon: IconButton.filled(
-                          style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStatePropertyAll(Colors.black),
-                            padding: MaterialStatePropertyAll(
-                              EdgeInsets.only(right: 30, left: 30),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        fillColor: Colors.white,
+                        filled: true,
+                        suffixIcon: IconButton.filled(
+                            style: const ButtonStyle(
+                              backgroundColor:
+                                  MaterialStatePropertyAll(Colors.black),
+                              padding: MaterialStatePropertyAll(
+                                EdgeInsets.only(right: 30, left: 30),
+                              ),
                             ),
-                          ),
-                          color: Colors.white,
-                          onPressed: () {},
-                          icon: const Icon(Icons.arrow_forward)),
-                      hintText: 'Enter your Email here',
-                      contentPadding: const EdgeInsets.only(left: 20),
-                      border: const OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(25),
-                        ),
+                            color: Colors.white,
+                            onPressed: () {},
+                            icon: const Icon(Icons.arrow_forward)),
+                        hintText: 'Enter your Email here',
+                        contentPadding: const EdgeInsets.only(left: 20),
+                        border: const OutlineInputBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(25),
+                            ),
+                            borderSide: BorderSide.none),
                       ),
                     ),
                   ),
+                ),
+                const SizedBox(height: 96),
+              ],
+            ),
+          ),
+
+          // Footer
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 44),
+            width: double.infinity,
+            color: Colors.black,
+            child: Column(
+              children: [
+                SizedBox(height: 94),
+                Row(
+                  children: [
+                    // Column 1 (INTELLECTUALS)
+                    Container(
+                      width: 434,
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                'INTELLECTUALS',
+                                style: GoogleFonts.montserrat(
+                                    fontSize: 36,
+                                    fontWeight: FontWeight.bold,
+                                    height: 1.2,
+                                    color: Colors.white,
+                                    fontStyle: FontStyle.italic),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          const Padding(padding: EdgeInsets.only(top: 20)),
+                          Container(
+                            child: Text(
+                              'Lorem ipsum dolor sit amet consectetur. Ipsum in blandit vel gravida elementum varius ultrices at id. Mattis egestas lorem pharetra non.',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 24,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 130),
+
+                    // Column 2 (Contact & About)
+                    Container(
+                      alignment: Alignment.topLeft,
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                'Contact & About',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 36,
+                                  fontWeight: FontWeight.bold,
+                                  height: 1.2,
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.left,
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 11),
+                          Text(
+                            'Contact',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w400,
+                              height: 1.0,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 22),
+                          Text(
+                            'Review',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w400,
+                              height: 1.0,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 22),
+                          Text(
+                            'About',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w400,
+                              height: 1.0,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 22),
+                          Text(
+                            'Industries',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w400,
+                              height: 1.0,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 22),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
