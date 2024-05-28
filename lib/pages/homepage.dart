@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,11 +12,11 @@ class HomePage extends StatelessWidget {
         children: [
           // Nav bar
           Container(
+            padding: const EdgeInsets.symmetric(horizontal: 100),
             alignment: Alignment.center,
-            width: MediaQuery.of(context).size.width,
             // decoration: const BoxDecoration(color: Colors.blueAccent,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
                   'images/logo.png',
@@ -91,13 +90,12 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 50),
-
           // Home content
           Container(
             alignment: Alignment.center,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 115),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 113, vertical: 50),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -126,10 +124,10 @@ class HomePage extends StatelessWidget {
                   Container(
                     alignment: Alignment.center,
                     child: Padding(
-                      padding: EdgeInsets.only(top: 35),
+                      padding: const EdgeInsets.only(top: 35),
                       child: Row(
                         children: [
-                          Container(
+                          SizedBox(
                             width: 972,
                             child: Text(
                               'Improve Academically. Yours For The Taking',
@@ -153,7 +151,7 @@ class HomePage extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 15),
                     child: Row(
                       children: [
-                        Container(
+                        SizedBox(
                           width: 785,
                           child: Text(
                             'Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants across the globe',
@@ -215,7 +213,6 @@ class HomePage extends StatelessWidget {
           ),
           // Counter
           Container(
-            margin: const EdgeInsets.only(top: 127, bottom: 77),
             padding: const EdgeInsets.only(top: 25, bottom: 25),
             decoration: const BoxDecoration(color: Colors.black),
             child: Row(
@@ -334,15 +331,15 @@ class HomePage extends StatelessWidget {
           ),
           // About Section
           Padding(
-            padding: const EdgeInsets.only(top: 50, left: 102, bottom: 102),
+            padding: const EdgeInsets.symmetric(horizontal: 113, vertical: 77),
             child: Column(
               children: [
                 // Big Text Description
                 Padding(
-                  padding: EdgeInsets.only(top: 0),
+                  padding: const EdgeInsets.only(top: 0),
                   child: Row(
                     children: [
-                      Container(
+                      SizedBox(
                         width: 850,
                         child: Text(
                           'Skill Transformation Pack From Intellectuals',
@@ -360,7 +357,7 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 15),
                   child: Row(
                     children: [
-                      Container(
+                      SizedBox(
                         width: 765,
                         child: Text(
                           'Combine technical training for Students with Industries experts, mentors and Project managers for critical thinking that pushes innovation. This training is to equip academic giants for the job market.',
@@ -378,7 +375,7 @@ class HomePage extends StatelessWidget {
                 ),
                 // Some boxes
                 Padding(
-                  padding: EdgeInsets.only(top: 50),
+                  padding: const EdgeInsets.only(top: 50),
                   child: Column(
                     children: [
                       Row(
@@ -487,7 +484,8 @@ class HomePage extends StatelessWidget {
 
           // Services Section
           Container(
-            padding: const EdgeInsets.only(left: 102, top: 156, bottom: 106),
+            // padding: const EdgeInsets.only(left: 102, top: 156, bottom: 106),
+            padding: const EdgeInsets.symmetric(horizontal: 113, vertical: 125),
             decoration: const BoxDecoration(color: Colors.black),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -949,7 +947,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       // Single box Profile Avatar 1
-                      Container(
+                      SizedBox(
                         height: 519,
                         width: 294,
                         child: Column(
@@ -988,7 +986,7 @@ class HomePage extends StatelessWidget {
 
                                   // Social Icons
                                   Container(
-                                    padding: EdgeInsets.only(right: 14.5),
+                                    padding: const EdgeInsets.only(right: 14.5),
                                     child: const Row(
                                       children: [
                                         Icon(Icons.nature_sharp),
@@ -1026,7 +1024,7 @@ class HomePage extends StatelessWidget {
                       ),
 
                       // Single box Profile Avatar 2
-                      Container(
+                      SizedBox(
                         height: 519,
                         width: 294,
                         child: Column(
@@ -1065,7 +1063,7 @@ class HomePage extends StatelessWidget {
 
                                   // Social Icons
                                   Container(
-                                    padding: EdgeInsets.only(right: 14.5),
+                                    padding: const EdgeInsets.only(right: 14.5),
                                     child: const Row(
                                       children: [
                                         Icon(Icons.nature_sharp),
@@ -1103,7 +1101,7 @@ class HomePage extends StatelessWidget {
                       ),
 
                       // Single box Profile Avatar 3
-                      Container(
+                      SizedBox(
                         height: 519,
                         width: 294,
                         child: Column(
@@ -1142,7 +1140,7 @@ class HomePage extends StatelessWidget {
 
                                   // Social Icons
                                   Container(
-                                    padding: EdgeInsets.only(right: 14.5),
+                                    padding: const EdgeInsets.only(right: 14.5),
                                     child: const Row(
                                       children: [
                                         Icon(Icons.nature_sharp),
@@ -1180,7 +1178,7 @@ class HomePage extends StatelessWidget {
                       ),
 
                       // Single box Profile Avatar 4
-                      Container(
+                      SizedBox(
                         height: 519,
                         width: 294,
                         child: Column(
@@ -1219,7 +1217,7 @@ class HomePage extends StatelessWidget {
 
                                   // Social Icons
                                   Container(
-                                    padding: EdgeInsets.only(right: 14.5),
+                                    padding: const EdgeInsets.only(right: 14.5),
                                     child: const Row(
                                       children: [
                                         Icon(Icons.nature_sharp),
@@ -1458,7 +1456,7 @@ class HomePage extends StatelessWidget {
                 const SizedBox(height: 56),
 
                 // Big Text Description
-                Container(
+                SizedBox(
                   width: 788,
                   child: Text(
                     'Join The Community of Intellectuals',
@@ -1474,7 +1472,7 @@ class HomePage extends StatelessWidget {
                 const SizedBox(height: 26),
 
                 // Small Text Description
-                Container(
+                SizedBox(
                   width: 875,
                   child: Text(
                     'Become a member of the Intellectuals community today by sending your email address',
@@ -1531,16 +1529,16 @@ class HomePage extends StatelessWidget {
 
           // Footer
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 44),
+            padding: const EdgeInsets.symmetric(horizontal: 113, vertical: 125),
             width: double.infinity,
             color: Colors.black,
             child: Column(
               children: [
-                SizedBox(height: 94),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     // Column 1 (INTELLECTUALS)
-                    Container(
+                    SizedBox(
                       width: 434,
                       child: Column(
                         children: [
@@ -1573,28 +1571,24 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const SizedBox(width: 130),
 
                     // Column 2 (Contact & About)
                     Container(
                       alignment: Alignment.topLeft,
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
-                            children: [
-                              Text(
-                                'Contact & About',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 36,
-                                  fontWeight: FontWeight.bold,
-                                  height: 1.2,
-                                  color: Colors.white,
-                                ),
-                                textAlign: TextAlign.left,
-                              ),
-                            ],
+                          Text(
+                            'Contact & About',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              height: 1.2,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.left,
                           ),
-                          const SizedBox(height: 11),
+                          const SizedBox(height: 27),
                           Text(
                             'Contact',
                             style: GoogleFonts.montserrat(
@@ -1605,7 +1599,7 @@ class HomePage extends StatelessWidget {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 22),
+                          const SizedBox(height: 27),
                           Text(
                             'Review',
                             style: GoogleFonts.montserrat(
@@ -1616,7 +1610,7 @@ class HomePage extends StatelessWidget {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 22),
+                          const SizedBox(height: 27),
                           Text(
                             'About',
                             style: GoogleFonts.montserrat(
@@ -1627,7 +1621,7 @@ class HomePage extends StatelessWidget {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 22),
+                          const SizedBox(height: 27),
                           Text(
                             'Industries',
                             style: GoogleFonts.montserrat(
@@ -1638,7 +1632,69 @@ class HomePage extends StatelessWidget {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 22),
+                        ],
+                      ),
+                    ),
+                    // Column 3 (Term & Conditions)
+                    Container(
+                      alignment: Alignment.topLeft,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Terms & Conditions',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              height: 1.2,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.left,
+                          ),
+                          const SizedBox(height: 27),
+                          Text(
+                            'Terms & Conditions',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w400,
+                              height: 1.0,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 27),
+                          Text(
+                            'Service Legal Agreement',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w400,
+                              height: 1.0,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 27),
+                          Text(
+                            'Cookie Policy',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w400,
+                              height: 1.0,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 27),
+                          Text(
+                            'Privacy Policy',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w400,
+                              height: 1.0,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
                         ],
                       ),
                     ),
